@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/motion_2"
+    app:showPaths="true"
+    tools:context=".Motion2Activity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/motion_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sunset"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

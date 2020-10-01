@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/motion_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motion 1(Linear Motion)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"
+        android:onClick="motion1Clicked"
+        />
+
+    <TextView
+        android:id="@+id/motion_lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motion 2(Image filter)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"
+        android:onClick="motion2Clicked"
+        />
+
+    <TextView
+        android:id="@+id/motion_lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motion 3(Curve Motion)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"
+        android:onClick="motion3Clicked"
+        />
+
+    <TextView
+        android:id="@+id/motion_lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motion 4(Cyclic Curve Motion)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"
+        android:onClick="motion4Clicked"
+        />
+</LinearLayout>
