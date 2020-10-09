@@ -4,33 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:fitsSystemWindows="false"
+    android:id="@+id/content"
     tools:context=".MotionScrollingActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
-        android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
+        <com.vr.motionapp.ui.CollapsibleToolbar
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar">
+            android:fitsSystemWindows="false"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways|snap"
+            android:minWidth="50dp"
+            app:layoutDescription="@xml/scroll_motion_1"
+            >
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+            <ImageView
+                android:id="@+id/background"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                android:layout_height="200dp"
+                android:background="@color/colorAccent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sunset"/>
 
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:text="Monterey"
+                android:textColor="#FFF"
+                android:textSize="32dp" />
+
+        </com.vr.motionapp.ui.CollapsibleToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_motion_scrolling" />

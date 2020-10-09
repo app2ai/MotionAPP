@@ -27,4 +27,8 @@ class MainActivity : AppCompatActivity() {
     fun motion4Clicked(v:View){
         startActivity(Intent(this, Motion4Activity::class.java))
     }
+
+    fun motion5Clicked(v:View){
+        startActivity(Intent(this, MotionScrollingActivity::class.java))
+    }
 }
