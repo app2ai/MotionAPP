@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    android:id="@+id/content"
-    tools:context=".MotionScrollingActivity">
+    android:id="@+id/content">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -20,7 +19,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="false"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways|snap"
-            android:minWidth="50dp"
+            android:minHeight="50dp"
             app:layoutDescription="@xml/scroll_motion_1"
             >
 
@@ -42,6 +41,14 @@
                 android:textColor="#FFF"
                 android:textSize="32dp" />
 
+            <TextView
+                android:id="@+id/sublabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="California"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                app:fontFamily="cursive" />
         </com.vr.motionapp.ui.CollapsibleToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 

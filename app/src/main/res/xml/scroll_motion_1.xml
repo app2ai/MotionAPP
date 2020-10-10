@@ -29,6 +29,13 @@
             android:rotation="0.0"
             motion:layout_constraintBottom_toBottomOf="@+id/background"
             motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/sublabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            motion:layout_constraintBaseline_toBaselineOf="@+id/label"
+            motion:layout_constraintStart_toEndOf="parent" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/start">
@@ -45,5 +52,12 @@
             android:rotation="-90.0"
             motion:layout_constraintBottom_toBottomOf="@+id/background"
             motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@id/sublabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintBaseline_toBaselineOf="@+id/label"
+            motion:layout_constraintEnd_toEndOf="parent" />
     </ConstraintSet>
 </MotionScene>

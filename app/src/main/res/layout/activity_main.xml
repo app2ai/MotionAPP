@@ -71,4 +71,17 @@
         android:padding="8dp"
         android:onClick="motion5Clicked"
         />
+
+    <TextView
+        android:id="@+id/motion_lay6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motion 6(Drawer Motion)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"
+        android:onClick="motion6Clicked"
+        />
 </LinearLayout>

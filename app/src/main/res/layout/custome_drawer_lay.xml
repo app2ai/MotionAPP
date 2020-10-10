@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vr.motionapp.ui.DrawerContent
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layoutDescription="@xml/drawer_motion1">
+
+    <include layout="@layout/activity_motion_scrolling"/>
+
+</com.vr.motionapp.ui.DrawerContent>
