@@ -21,6 +21,17 @@
             android:alpha="0.2"
             motion:layout_constraintBottom_toBottomOf="parent" />
         <Constraint
+            android:id="@id/hamberger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="0.0"
+            android:visibility="visible"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@+id/background"
+            />
+        <Constraint
             android:id="@id/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +39,7 @@
             android:layout_marginBottom="8dp"
             android:rotation="0.0"
             motion:layout_constraintBottom_toBottomOf="@+id/background"
-            motion:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintStart_toEndOf="@id/hamberger" />
         <Constraint
             android:id="@+id/sublabel"
             android:layout_width="wrap_content"
@@ -45,6 +56,18 @@
             android:layout_height="match_parent"
             android:alpha="1.0"
             motion:layout_constraintBottom_toBottomOf="parent" />
+
+        <Constraint android:id="@id/hamberger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:rotation="-180"
+            motion:layout_constraintBottom_toBottomOf="@+id/background"
+            motion:layout_constraintStart_toStartOf="parent"
+            />
+
         <Constraint
             android:id="@+id/label"
             android:layout_width="wrap_content"

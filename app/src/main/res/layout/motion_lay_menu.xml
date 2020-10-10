@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.vr.motionapp.ui.DrawerContent xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/menu"
     android:layout_width="180dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
+    app:layoutDescription="@xml/drawer_menu_scene"
     android:background="@color/colorPrimaryDark">
-    <!--app:layoutDescription="@xml/drawer_menu_scene"-->
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -91,4 +92,4 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.vr.motionapp.ui.DrawerContent>

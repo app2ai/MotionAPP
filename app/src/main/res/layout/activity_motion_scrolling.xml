@@ -31,6 +31,12 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/sunset"/>
 
+            <ImageView
+                android:id="@+id/hamberger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"/>
+
             <TextView
                 android:id="@+id/label"
                 android:layout_width="wrap_content"

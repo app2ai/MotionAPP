@@ -11,14 +11,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MotionDrawerActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity
             android:name=".MotionScrollingActivity"
             android:label="@string/title_activity_motion_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Motion4Activity" />
         <activity android:name=".Motion3Activity" />
         <activity android:name=".Motion2Activity" />
         <activity android:name=".Motion1Activity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
