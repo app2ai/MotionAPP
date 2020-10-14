@@ -84,4 +84,17 @@
         android:padding="8dp"
         android:onClick="motion6Clicked"
         />
+
+    <TextView
+        android:id="@+id/motion_lay7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motion 7(Parallex Motion)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"
+        android:onClick="motion7Clicked"
+        />
 </LinearLayout>

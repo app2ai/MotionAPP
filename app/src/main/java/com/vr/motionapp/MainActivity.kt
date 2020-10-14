@@ -35,4 +35,8 @@ class MainActivity : AppCompatActivity() {
     fun motion6Clicked(v:View){
         startActivity(Intent(this, MotionDrawerActivity::class.java))
     }
+
+    fun motion7Clicked(v:View){
+        startActivity(Intent(this, ParallexMotionActivity::class.java))
+    }
 }

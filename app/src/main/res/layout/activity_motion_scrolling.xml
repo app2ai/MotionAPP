@@ -69,4 +69,13 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email" />-->
 
+    <!--<androidx.constraintlayout.utils.widget.MockView
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:id="@+id/mockButton"
+        app:mock_label="Side Panel"
+        app:mock_showDiagonals="true"
+        app:mock_diagonalsColor="#FFF"
+        android:background="@color/colorPrimaryDark"/>-->
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
